@@ -1,0 +1,51 @@
+.container .boxResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.container .boxResult img.computedVote {
+    display: block;
+    margin-bottom: 30px;
+    width: 162px;
+}
+
+.container .boxResult h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.container .boxResult p.result {
+    text-align: center;
+    max-width: 340px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.container .boxResult span {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: var(--primaryColor);
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 376px) {
+    .container .boxResult {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .container .boxResult img.computedVote {
+        margin-bottom: 25px;
+        width: 145px;
+    }
+
+    .container .boxResult span {
+        margin-bottom: 30px;
+    }
+}

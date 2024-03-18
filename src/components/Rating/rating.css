@@ -1,0 +1,90 @@
+.container .box {
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.container .box .starIcon {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 14px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.container .box h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.container .box p {
+    max-width: 350px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.container .box .btnsRate {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.container .box .btnsRate .rate {
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.container .box button {
+    width: 100%;
+    background-color: var(--primaryColor);
+    border: none;
+    padding: 15px 15px;
+    color: #FFF;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.container .box .btnsRate .rate:hover {
+    background-color: var(--secondaryColor);
+    color: #FFF;
+    cursor: pointer;
+}
+
+.container .box button:hover {
+    background-color: #FFF;
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.btnsRate input {
+    display: none;
+}
+
+.btnsRate input[type="radio"]:checked + .rate {
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+@media (max-width: 376px) {
+    .container .box {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .container .box .starIcon {
+        margin-bottom: 20px;
+    }
+
+    .container .box .btnsRate .button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

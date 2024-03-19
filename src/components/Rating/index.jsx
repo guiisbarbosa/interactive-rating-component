@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './rating.css'
 import { useNavigate } from 'react-router-dom';
+import star from '/icon-star.svg'
 
 function Rating() {
     const [selectedValue, setSelectedValue] = useState('')
@@ -17,7 +18,7 @@ function Rating() {
     return (
         <div className="container">
             <div className="box">
-                <img className='starIcon' src="../src/images/icon-star.svg" alt="" />
+                <img className='starIcon' src={star} alt="" />
                 <h1>How did we do?</h1>
                 <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
                 <div className="btnsRate">
